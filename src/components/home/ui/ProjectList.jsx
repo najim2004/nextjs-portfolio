@@ -2,7 +2,6 @@
 
 import React, { createRef } from "react";
 import PropTypes from "prop-types";
-import { IProjectItem } from "@/types";
 import Row from "@/components/core/Row";
 import ProjectItem from "./ProjectItem";
 import Column from "@/components/core/Column";

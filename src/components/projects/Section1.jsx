@@ -9,27 +9,10 @@ import Column from "@/components/core/Column";
 import AppBar from "@/components/common/AppBar";
 import ScreenshotGallery from "./components/ScreenshotGallery";
 import { getProjectDetails } from "@/data/projects";
-import { ProjectType } from "@/types";
 
 const ProjectsSection1 = ({ id }) => {
   const searchParams = useSearchParams();
   const project = getProjectDetails(searchParams.get("id"));
-
-  const renderProjectType = (type) => {
-    switch (type) {
-      case ProjectType.Personal:
-        return "Personal Project";
-
-      case ProjectType.JobWork:
-        return "Job Work";
-
-      case ProjectType.Freelance:
-        return "Freelance Project";
-
-      default:
-        return null;
-    }
-  };
 
   return (
     <ResponsiveBox classNames="bg-[var(--dialogColor)]" id={id}>
@@ -53,9 +36,7 @@ const ProjectsSection1 = ({ id }) => {
 
               <Column>
                 <p className="text-lg/6 font-semibold">{project?.title}</p>
-                <p className="text-base/6 text-[var(--textColorLight)]">
-                  {renderProjectType(project.projectType)}
-                </p>
+                <p className="text-base/6 text-[var(--textColorLight)]"></p>
               </Column>
             </Row>
           ) : null}

@@ -1,5 +1,3 @@
-import { SkillLevel } from "@/types";
-
 const skills = [
   {
     title: "Programming Languages",

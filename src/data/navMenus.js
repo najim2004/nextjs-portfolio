@@ -21,12 +21,12 @@ const navMenus = [
     path: "/#services",
     section: "services",
   },
-  {
-    id: "experiences",
-    title: "Experiences",
-    path: "/#experiences",
-    section: "experiences",
-  },
+  // {
+  //   id: "experiences",
+  //   title: "Experiences",
+  //   path: "/#experiences",
+  //   section: "experiences",
+  // },
   {
     id: "skills",
     title: "Skills",
@@ -65,11 +65,11 @@ export const menuItems = [
     link: "/#services",
     icon: faBriefcase,
   },
-  {
-    name: "<Experiences>",
-    link: "/#experiences",
-    icon: faTimeline,
-  },
+  // {
+  //   name: "<Experiences>",
+  //   link: "/#experiences",
+  //   icon: faTimeline,
+  // },
   {
     name: "<Skills>",
     link: "/#skills",
